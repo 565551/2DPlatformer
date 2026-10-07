@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;       // Position to check if grounded
     public float groundCheckRadius = 0.2f; // Radius of ground check circle
     public LayerMask groundLayer;       // Layer considered as ground
-
+   
 
 
     void Update()
