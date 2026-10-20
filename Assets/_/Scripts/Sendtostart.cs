@@ -28,7 +28,6 @@ public class Sendtostart : MonoBehaviour
             Debug.LogError("Could not find a GameObject with the tag 'Player'!");
         }
     }
-
     private void OnCollisionEnter2D(Collision2D other)
     {
         // Check if the object entering the trigger is the player
@@ -39,7 +38,6 @@ public class Sendtostart : MonoBehaviour
 
         }
     }
-
     // Function to send to the start of the level
     private void sendtostartoflevel()
     {

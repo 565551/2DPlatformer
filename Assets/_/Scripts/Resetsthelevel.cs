@@ -1,18 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Resetsthelevel : MonoBehaviour
+public class resetsthelevel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // The name of the next scene to load
+    public string nextSceneName;
+    // Add this code to your player script
+    public DisplayMessage displayMessage;
+
+    public string showMessage;
+
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        
+        // Check if the object entering the trigger is the player
+        if (other.gameObject.tag == "Player")
+        {
+            // Delay for visual effect (optional)
+            Invoke("Resetsthelevel", 0f);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    // Function to load the next scene
+    private void Resetsthelevel()
     {
-        
+        SceneManager.LoadScene(nextSceneName);
     }
 }

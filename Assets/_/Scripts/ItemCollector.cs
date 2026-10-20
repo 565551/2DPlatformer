@@ -17,8 +17,7 @@ public class ItemCollector : MonoBehaviour
             // Use the reference to ArrayListManager to add the item
             arrayListManager.AddItem(itemName);
             arrayListManager.DisplayItems();
-            Destroy(this.gameObject);
-
+            gameObject.SetActive(false);
         }
     }
 }
