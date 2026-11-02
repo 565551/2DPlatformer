@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class ItemCollector : MonoBehaviour
@@ -7,6 +8,12 @@ public class ItemCollector : MonoBehaviour
 
     // Public variable to assign item name in the Inspector
     [SerializeField] private string itemName;
+    public TextMeshProUGUI coincollectedtext;
+    private int totalcoins;
+    private void Start()
+    {
+        totalcoins = GameObject.FindGameObjectsWithTag("Coin").Length;
+    }
 
     // Detect collision with a 2D box collider
     private void OnTriggerEnter2D(Collider2D collision)
@@ -18,6 +25,7 @@ public class ItemCollector : MonoBehaviour
             arrayListManager.AddItem(itemName);
             arrayListManager.DisplayItems();
             gameObject.SetActive(false);
+            coincollectedtext.text = "Coins " + arrayListManager.itemList.Count + "/ " + totalcoins;
         }
     }
 }

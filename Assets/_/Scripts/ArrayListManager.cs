@@ -5,19 +5,7 @@ using UnityEngine;
 public class ArrayListManager : MonoBehaviour
 {
     // Use a List to hold items
-    [SerializeField] private List<string> itemList = new List<string>();
-
-
-    void Start()
-    {
-        // Adding some initial items
-        AddItem("Apple");
-        AddItem("Banana");
-        AddItem("Cherry");
-
-        // Display current items
-        DisplayItems();
-    }
+    [SerializeField] public List<string> itemList = new List<string>();
 
     // Function to add an item to the ArrayList
     public void AddItem(string item)
@@ -53,13 +41,6 @@ public class ArrayListManager : MonoBehaviour
     // Example of adding and deleting items
     void Update()
     {
-        // Example usage: Press 'A' to add an item and 'D' to delete an item
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            AddItem("NewItem" + Random.Range(1, 100));
-            DisplayItems();
-        }
-
         if (Input.GetKeyDown(KeyCode.D))
         {
             if (itemList.Count > 0)

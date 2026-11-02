@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4776382036759794026}
   m_Layer: 0
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,3 +135,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrayListManager: {fileID: 0}
   itemName: Coin
+  coincollectedtext: {fileID: 0}
