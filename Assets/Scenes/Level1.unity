@@ -2024,7 +2024,7 @@ MonoBehaviour:
   nextSceneName: 
   displayMessage: {fileID: 0}
   showMessage: 
-  player: {fileID: 0}
+  player: {fileID: 1144455358}
   spawnPoint: {fileID: 1558976232}
 --- !u!61 &1421662546
 BoxCollider2D:
