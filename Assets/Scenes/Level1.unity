@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 295609473}
   - component: {fileID: 295609472}
   m_Layer: 0
-  m_Name: Tilemap coine hole entrance
+  m_Name: Tilemap coin hole entrance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -343,7 +343,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_Origin: {x: 0, y: 0, z: 0}
   m_Size: {x: 55, y: 3, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
